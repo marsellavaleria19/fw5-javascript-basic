@@ -1,0 +1,36 @@
+let data = {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    address: {
+        street: "Kulas Light",
+        suite: "Apt. 556",
+        city: "Gwenborough",
+        zipcode: "92998-3874",
+    },
+    phone: "1-770-736-8031 x56442",
+    website: "hildegard.org",
+}
+
+data = {...data, name: "Budi", email: "budi@gmail.com", hobby: "Nonton TV" }
+console.log(data)
+    // console.log(
+    //     {
+    //         ...data,
+    //         name: "Budi",
+    //         email: "budi@gmail.com",
+    //         hobby: "Nonton TV"
+    //     }
+    // )
+    // // jawaban soal a
+    // data.name = "Marsella Valeria"
+    // data.email = "marsellavaleria19@gmail.com"
+    // let hobby = "Menonton TV"
+    // data = {...data, hobby }
+    // console.log(data)
+
+//jawaban soal b
+const { address } = data
+const { street, city } = address
+console.log(`Street :${street}\nCity:${city}`)

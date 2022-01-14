@@ -1,0 +1,15 @@
+const printSegitiga = 5
+var segitiga = "";
+
+if (typeof printSegitiga !== "string") {
+    for (var i = printSegitiga; i > 0; i--) {
+        for (var j = 1; j <= i; j++) {
+            segitiga += `${j} `
+        }
+        if (i !== 1)
+            segitiga += "\n"
+    }
+    console.log(segitiga);
+} else {
+    console.log("Data harus number")
+}

@@ -1,0 +1,30 @@
+const mtk = 80
+const bahasaIndonesia = 90
+const bahasaInggris = 89
+const ipa = 69
+
+let validasi = ((mtk == null || mtk == "") ||
+    (bahasaIndonesia == null || bahasaIndonesia == "") ||
+    (bahasaInggris == null || bahasaInggris == "") ||
+    (ipa == null || ipa == "")) ? true : false
+
+
+let grade = ""
+let average = 0
+if (validasi == false) {
+    average = (mtk + bahasaIndonesia + bahasaInggris + ipa) / 4
+    if (average >= 90 && average <= 100) {
+        grade = "A"
+    } else if (average >= 80 && average <= 89) {
+        grade = "B"
+    } else if (average >= 70 && average <= 79) {
+        grade = "C"
+    } else if (average >= 60 && average <= 69) {
+        grade = "D"
+    } else {
+        grade = "E"
+    }
+    console.log(`Rata-rata ${average}\nGrade=${grade}`)
+} else {
+    console.log("Semua nilai harus diisi.");
+}

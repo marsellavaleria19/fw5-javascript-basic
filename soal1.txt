@@ -1,0 +1,31 @@
+var biodata = {
+    name: "Marsella Valeria",
+    age: 27,
+    hobbies: ["Menonton TV", "Mendengarkan musik"],
+    isMaried: false,
+    schoolList = [{
+            name: "SMP Santa Angela",
+            yearIn: 2006,
+            yearOut: 2009,
+            major: null
+        },
+        {
+            name: "SMA Santa Maria 2",
+            yearIn: 2009,
+            yearOut: 2012,
+            major: "IPA"
+        },
+        {
+            name: "Institut Teknologi Harapan Bangsa",
+            yearIn: 2012,
+            yearOut: 2016,
+            major: "Teknik Informatika"
+        }
+    ],
+    skills: [
+        { name: "Java", level: "advanced" },
+        { name: "HTML", level: "advanced" },
+        { name: "PHP", level: "advanced" }
+    ],
+    interestInCoding: true
+}
