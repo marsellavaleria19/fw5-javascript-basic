@@ -1,7 +1,7 @@
 const printSegitiga = 5
 var segitiga = "";
 
-if (typeof printSegitiga !== "string") {
+if (typeof printSegitiga === "number") {
     for (var i = printSegitiga; i > 0; i--) {
         for (var j = 1; j <= i; j++) {
             segitiga += `${j} `
